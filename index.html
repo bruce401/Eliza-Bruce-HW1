@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:#FFFF">
+
+<img id="dog" onClick="changeImage()" src="gfx/dog1.jpg">
+
+<button type="button" onClick = "buttonFunction()">
+lol</button>
+
+<img id="lol" src="gfx/white.jpg">
+
+
+<script>
+
+
+function changeImage() {
+    var image = document.getElementById('dog');
+    if (image.src.match("dog2")) {
+        image.src = "gfx/dog1.jpg";
+    } else {
+        image.src = "gfx/dog2.jpg";
+    }
+}
+
+function buttonFunction() {
+	var butt = document.getElementById("lol");
+	butt.src = "gfx/dog3.jpg";
+}
+
+// function changeImage(){
+// 	var image = document.getElementById('lol');
+// 	if(image.src.match("dog3")){
+// 		image.src = "gfx/white.jpg";
+// 	} else {
+// 		image.src = "gfx/dog3.jpg";
+// 	}
+// 	}
+// }
+ // function changeBackground(cat) {
+ //    document.body.style.background = cat;
+ // }
+
+</script>
+
+
+
+</body>
+</html>
